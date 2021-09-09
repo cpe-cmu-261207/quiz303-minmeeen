@@ -9,13 +9,14 @@ function App() {
     <div className="p-2">
       {/* post container */}
       <div className="mx-auto max-w-2xl bg-white rounded-md shadow p-4 space-y-2 divide-y">
-        <Post/>
+        <div className="">
+          <Post/>
         
         
         
 
         {/* comments section */}
-        <div className="">
+        
 
 
           
