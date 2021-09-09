@@ -1,4 +1,4 @@
-import { comments } from '../data/comments'
+import { comments, CommentType } from '../data/comments'
 import React, { useState } from "react";
 import { render } from '@testing-library/react';
 import Ment from './Ment';
@@ -19,15 +19,15 @@ const Comments = () => {
 
     // }
 
-    const [ment, setMent] = useState<CommentProps[]>([]);
+    const [ment, setMent] = useState<CommentType[]>([]);
 
     return (
         // normal comment
         <div className="commentsList">
             {/* {ment.map(x => <Comment username={x.username}></Comment> )} */}
             
-            {/* {ment.map(x => <Ment username={x.username} userImagePath={x.userImagePath} commentText={x.commentText} likeNum={x.likeNum} replies={x}/>)}
- */}
+            {/* {ment.map(x => <Ment username={x.username} userImagePath={x.userImagePath} commentText={x.commentText} likeNum={x.likeNum} replies={x}/>)} */}
+
         <Ment/>
         </div>
 
